@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/erro', function () {
     return view('erro');
 });
+Route::get('/Politica', function () {
+    return view('Politica');
+});
+Route::get('/TermoUso', function () {
+    return view('TermoUso');
+});
+
 
 Route::get('/', [SiteController::class, 'home'])->name('home');
 
