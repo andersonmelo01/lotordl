@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    // ... outras configurações ...
+    'pagbank' => [
+        'api_url' => env('PAGBANK_API_URL'), 
+        'client_id' => env('PAGBANK_CLIENT_ID'),
+        'client_secret' => env('PAGBANK_CLIENT_SECRET'),
+    ],
 
 ];

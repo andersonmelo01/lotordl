@@ -82,7 +82,7 @@
                             <p class="p-0 m-0">{{ Auth::user()->name }}</p>
                             <p class="p-0 m-0">{{ Auth::user()->email }}</p>
                             <p class="p-0 m-0 text-warning">Saldo: {{ 'R$ ' . number_format(Auth::user()->saldo, 2, ',', '.') }}</p>
-                            <a href="" class="btn btn-warning btn-sm">Depositar</a>
+                            <a href="/adm/depositar" class="btn btn-warning btn-sm">Depositar</a>
                             <a href="" class="btn btn-danger btn-sm">Sacar</a>
                         </div>
                     </div>

@@ -20,6 +20,9 @@ Route::get('/TermoUso', function () {
 Route::get('/', [SiteController::class, 'home'])->name('home');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/adm/depositar', function () {
+        return view('/adm/depositar');
+    });
 
     Route::get('/dashboard', [SiteController::class, 'dashboard'])->name('dashboard');
 
